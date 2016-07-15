@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="状态栏测试"/>
+
+    <Button
+        android:id="@+id/show_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tips"
+        android:text="隐藏状态栏"
+        />
+
+    <Button
+        android:id="@+id/hide_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_fullscreen"
+        android:text="显示状态栏"/>
+
+    <Button
+        android:id="@+id/low_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hide_fullscreen"
+        android:text="正常隐藏状态栏"
+        />
+
+    <Button
+        android:id="@+id/low_unfullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/low_fullscreen"
+        android:text="正常显示状态栏"/>
+
+
+    <Button
+        android:id="@+id/immersive_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/low_unfullscreen"
+        android:text="沉浸隐藏状态栏"
+        />
+
+    <Button
+        android:id="@+id/immersive_unfullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/immersive_fullscreen"
+        android:text="沉浸显示状态栏"/>
+
+</RelativeLayout>
